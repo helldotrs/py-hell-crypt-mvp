@@ -28,6 +28,10 @@ def caesar_cipher(text, shift, mode='encrypt'):
             result += char
     return result
 
+def save_note(note, key):
+    # FIXME/PSUDO
+    sql_save(data = encrypt(note, key))
+
 # Example usage
 text = "Hello, World!"
 shift = 3
